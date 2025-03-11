@@ -31,7 +31,8 @@ SECRET_KEY = "django-insecure-0#7whka$c2-cvm!_5mdj@xrk)v%o^1*7_igthst#o8c5ua#qd2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['myecommerceappdemo-asbsg4afdddhfnf3.northeurope-01.azurewebsites.net', '.azurewebsites.net']
+
 
 
 # Application definition
@@ -54,6 +55,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = "ecommerce_project.urls"
